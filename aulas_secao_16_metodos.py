@@ -2,7 +2,7 @@
 Representam os comportamentos do objeto (as suas ações).
 
 Os métodos são dividios em:
-    Métodos de Instâncias
+    Métodos de Instâncias precisa ser ligado ao objeto para ser utilizado
     Métodos de Classe
 
 O método __init__ é p construtor, que construe o objeto a partir da classe.
