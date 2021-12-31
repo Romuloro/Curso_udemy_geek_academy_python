@@ -49,6 +49,7 @@ class Conta:
     def limite(self, novo_limite):
         self.__limite = novo_limite
 
+    @property
     def extrato(self):
         return f'Saldo de {self.__saldo} do cliente {self.__titular}'
 
@@ -66,8 +67,11 @@ class Conta:
 conta1 = Conta('Romulo', 3000, 5000)
 conta2 = Conta('Élissa', 2000, 5000)
 
-print(conta1.extrato())
-print(conta2.extrato())
+print(conta1.extrato)
+print(conta2.extrato)
+print(conta1.saldo)
+conta2.limite = 15000
+print(conta2.limite)
 
 
 
