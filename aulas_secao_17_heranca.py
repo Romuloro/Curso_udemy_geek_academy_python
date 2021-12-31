@@ -22,6 +22,7 @@ filha.
 
 """
 
+
 class Pessoa:
 
     def __init__(self, nome, sobrenome, cpf):
@@ -35,13 +36,14 @@ class Pessoa:
 
 class Cliente(Pessoa):
 
-    def __init__(self,nome, sobrenome, cpf, renda):
-        super().__init__(nome, sobrenome,cpf)
+    def __init__(self, nome, sobrenome, cpf, renda):
+        super().__init__(nome, sobrenome, cpf)
         self.__renda = renda
+
 
 class Funcionario(Pessoa):
 
-    def __init__(self,nome, sobrenome, cpf, matricula):
+    def __init__(self, nome, sobrenome, cpf, matricula):
         super().__init__(nome, sobrenome, cpf)
         self.__matricula = matricula
 
@@ -56,5 +58,3 @@ print(cl1.nome_completo())
 print(fun.nome_completo())
 
 # Sobrescrita de Métodos (Overriding)
-
-
